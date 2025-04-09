@@ -18,6 +18,8 @@ html{
 body{
     margin: 0;
     font-family: 'Lato', serif;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, p, a, ul{
@@ -29,6 +31,7 @@ h1, h2, h3, p, a, ul{
     font-family: Georgia, sans-serif;
     font-weight: bold;
     font-size: 50px;
+    color: var(--accent);
 }
 
 .btn__text{
@@ -187,6 +190,136 @@ color: #FFFFFF;
     margin-bottom: 0;
 }
 
+/* Секция 2 */
+.section2 {
+    padding-top: 174px;
+    padding-bottom: 48px; 
+    padding-left: 43px;
+}
+.container_2 {
+    max-width: 1413px;
+    width: 100%;
+    margin: 0 auto;
+}
+.section2__inner {
+}
+.section2__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 52px;
+}
+.section2__subject {
+    margin-right: 136px;
+
+}
+
+.section2__subject__p{
+    margin-bottom: 1px;
+}
+
+.section2__h2{
+    max-width: 584px;
+    line-height: 157%;
+}
+
+.section2__text {
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+color: var(--text);
+}
+.title__text {
+    max-width: 650px;
+    line-height: 150%;
+    padding-top: 39px;
+}
+.section2__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+.section2__grid-item {
+    max-width: 390px;
+}
+.grid-item__number {
+    position: relative;
+    margin-bottom: 10px;
+}
+.number {
+    font-family: Georgia, sans-serif;
+font-weight: 400;
+font-size: 150px;
+line-height: 150%;
+color: rgba(1, 153, 109, 0.2);
+}
+.grid-item__h3 {
+    position: absolute;
+font-weight: 700;
+font-size: 30px;
+line-height: 150%;
+color: var(--black);
+font-family: Georgia, sans-serif;
+}
+.h3__col-1{
+left: 22%;
+right: 78%;
+top: 60%;
+bottom: 40%;
+}
+.h3__col-2{
+left: 20%;
+right: 80%;
+top: 60%;
+bottom: 40%;
+max-width: 313px;
+width: 313px;
+}
+.h3__col-3{
+
+position: absolute;
+left: 34%;
+right: 66%;
+top: 60%;
+bottom: 40%;
+}
+
+.grid__text {
+    margin-bottom: 62px;
+}
+.section2__img {
+    max-width: 390px;
+    max-height: 492px;
+}
+
+.item-1{
+    max-width: 382px;
+} 
+
+.item-3{
+    margin-top: 54px;
+} 
+
+.item-2  {
+    margin-top: 287px;
+}
+
+.item-2 .grid__text{
+    margin-bottom: 38px;
+}
+
+.item-3 .grid-item__number{
+    margin-bottom: 2px;
+}
+
+.item-3 .grid-text{
+    max-width: 441px;
+    margin-bottom: 48px;
+}
+/* Секция 3 */
+
+/* Секция 4 */
+
+
 /* Медиазапросы */
 @media screen and (max-width:1750px){
     .container{
@@ -203,7 +336,18 @@ color: #FFFFFF;
     .nav{
         margin-bottom: 10px;
     }
-    
+    .container_2{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .section2__title{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section2__subject{
+        margin-right: 50px;
+    }
 }
 @media screen and (max-width:1024px){
     .menu__inner{
@@ -211,8 +355,8 @@ color: #FFFFFF;
     }
     .menu__inner img{
         display: block;
-       margin: 0 auto;
-       margin-bottom: 10px;
+        margin: 0 auto;
+        margin-bottom: 10px;
     }
 
     .nav{
@@ -229,6 +373,23 @@ color: #FFFFFF;
         margin-bottom: 10px;
     }
     
+    .section2__grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item-3{
+        margin-top: 10px;
+    } 
+}
+
+@media screen and (max-width:913px){
+    .section2__grid{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .item-2{
+        margin-top: 10px;
+    } 
 }
 @media screen and (max-width:550px){
     .nav{
@@ -244,6 +405,40 @@ color: #FFFFFF;
     .header__link{
         margin: 0 auto;
     }
+
+    .h3__col-2{
+        width: 150px;
+        }
+}
+
+@media screen and (max-width:500px){
+    .h1__title {
+        font-size: 60px;
+    }
+    
+    .header__text{
+        font-size: 19px;
+        margin-bottom: 35px;
+    }
+
+    .text__h2{
+        font-size: 40px;
+    }
+    .section2__img{
+    max-width: 250px;
+}
+.section2__text{
+    font-size: 15px;
+}
+.footer ul li a{
+font-size: 20px;
+}
+.footer ul li{
+    margin-bottom: 10px;
+}
+.logo{
+    margin-bottom:10px;
+}
 }
 @media screen and (max-width:415px){
     .h1__title {
