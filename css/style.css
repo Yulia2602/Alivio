@@ -163,8 +163,8 @@ height: 65px;
 
 .footer {
     background-color: var(--bgcolor);
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 105px;
+    padding-bottom: 154px;
 }
 .footer ul li a{
 font-weight: 600;
@@ -183,7 +183,7 @@ color: #FFFFFF;
     margin-bottom: 60px ;
 }
 .logo {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 .footer ul li:last-child{
@@ -321,8 +321,6 @@ bottom: 40%;
     width: 100%;
     margin: 0 auto;
 }
-
-/* Секция 4 */
 .section3 {
     padding-top:229px ;
     padding-bottom: 177px;
@@ -370,6 +368,64 @@ height: 80.85px;
 left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
+}
+/* Секция 4 */
+.section4 {
+    padding-top: 120px;
+    padding-bottom: 240px;
+}
+.section4__inner {
+    display: flex;
+    padding-left: 157px;
+}
+.cards {
+    position: relative;
+    margin-right: 201px;
+
+}
+.section4__img {
+    max-width: 638px;
+    max-height: 573px;
+}
+.section4__card {
+    max-width: 333px;
+    max-height: 328px;
+position: absolute;
+right: 63%;
+top: 58%;
+
+filter: drop-shadow(0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25));
+
+}
+.section4__title {
+    max-width: 584px;
+}
+
+.section4__subject__p {
+line-height: 157%;
+margin-bottom: 8px;
+}
+
+.section4__h2 {
+    margin-bottom: 20px;
+    line-height: 157%;
+}
+.section4__text {
+font-weight: 400;
+font-size: 20px;
+line-height: 31px;
+color: #484848;
+margin-bottom: 30px;
+padding-top: 0;
+
+}
+.title__text {
+}
+.btn__text {
+}
+.section4__btn {
+width: 227px;
+height: 65px;
 }
 
 
@@ -450,6 +506,12 @@ transform: translate(-50%, -50%);
         max-width: 595px;
         
     }
+    .section4__inner{
+        flex-direction: column;
+    }
+    .cards{
+        margin-bottom: 60px;
+    }
 }
 
 @media screen and (max-width:913px){
@@ -461,6 +523,9 @@ transform: translate(-50%, -50%);
         margin-top: 10px;
     } 
     
+    .section4__card{
+        transform: translateX(50%);
+    }
 }
 
 @media screen and (max-width:700px){
@@ -471,6 +536,18 @@ transform: translate(-50%, -50%);
     .section3__img {
         max-width: 395px;
         
+    }
+
+    .section4__img{
+        max-width: 300px;
+    }
+
+    .section4__card{
+        max-width: 200px;
+    }
+
+    .section4__text{
+        font-size: 18px;
     }
 }
 @media screen and (max-width:550px){
