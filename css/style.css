@@ -316,8 +316,61 @@ bottom: 40%;
     margin-bottom: 48px;
 }
 /* Секция 3 */
+.container_3{
+    max-width: 1706px;
+    width: 100%;
+    margin: 0 auto;
+}
 
 /* Секция 4 */
+.section3 {
+    padding-top:229px ;
+    padding-bottom: 177px;
+    
+    background-color: var(--bgcolor);
+}
+.section3__inner {
+    display: flex;
+    align-items: center;
+    padding-left: 98px;
+}
+.section3__title {
+max-width: 580px;
+margin-right: 33px;
+}
+
+.section3__h2 {
+font-family: 'Georgia';
+font-style: normal;
+line-height: 157%;
+color: #FFFFFF;
+margin-bottom: 33px;
+}
+
+.section3__text {
+line-height: 157%;
+color: #FFFFFF;
+margin-bottom: 57px;
+}
+.section3__btn {
+padding: 20px 50px;
+}
+.section3__video {
+    position: relative;
+    
+}
+.section3__img {
+    max-width: 895px;
+    max-height: 516px;
+}
+.video__img {
+    position: absolute;
+width: 80.85px;
+height: 80.85px;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
 
 
 /* Медиазапросы */
@@ -348,6 +401,22 @@ bottom: 40%;
     .section2__subject{
         margin-right: 50px;
     }
+
+    .section3__inner{
+        flex-direction: column;
+    }
+    .section3__btn{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:1400px){
+.section2__grid{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.item-3{
+    margin-top: 10px;
+} 
 }
 @media screen and (max-width:1024px){
     .menu__inner{
@@ -373,13 +442,14 @@ bottom: 40%;
         margin-bottom: 10px;
     }
     
-    .section2__grid{
-        grid-template-columns: repeat(2, 1fr);
+    .section3{
+        padding-top: 30px;
     }
 
-    .item-3{
-        margin-top: 10px;
-    } 
+    .section3__img {
+        max-width: 595px;
+        
+    }
 }
 
 @media screen and (max-width:913px){
@@ -390,6 +460,18 @@ bottom: 40%;
     .item-2{
         margin-top: 10px;
     } 
+    
+}
+
+@media screen and (max-width:700px){
+    .section3__video{
+        right:50%;
+        transform: translateX(50%);
+    }
+    .section3__img {
+        max-width: 395px;
+        
+    }
 }
 @media screen and (max-width:550px){
     .nav{
@@ -410,6 +492,8 @@ bottom: 40%;
         width: 150px;
         }
 }
+
+
 
 @media screen and (max-width:500px){
     .h1__title {
@@ -438,6 +522,10 @@ font-size: 20px;
 }
 .logo{
     margin-bottom:10px;
+}
+.section3__img {
+    max-width: 295px;
+  
 }
 }
 @media screen and (max-width:415px){
